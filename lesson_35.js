@@ -107,7 +107,9 @@ log(...num); //Spread оператор раскладывает массив н�
 
 const array = ['a', 'b'];
 
-const copyArray = [...array]
+const copyArray = [...array];
+
+console.log(copyArray);
 
 const oldObj = {
     one: 1,
@@ -116,5 +118,4 @@ const oldObj = {
 
 const newObj = {...oldObj};
 
-console.log(copyArray);
 console.log(newObj);

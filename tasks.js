@@ -17,24 +17,24 @@
 
 // console.log(result);
 
-let result = '';
-const lines = 5;
-let n = 1;
-for (let i = 0; i <= lines; i++) {
+// let result = '';
+// const lines = 5;
+// let n = 1;
+// for (let i = 0; i <= lines; i++) {
 
-    for (let j = 1; j <= lines - i; j++) {       
-        result += ' ';
-    }
+//     for (let j = 1; j <= lines - i; j++) {       
+//         result += ' ';
+//     }
 
-    for (let k = 0; k < n; k++) {
-        result += '*';
-    }       
+//     for (let k = 0; k < n; k++) {
+//         result += '*';
+//     }       
     
-    n = n + 2;
-    result += '\n';
-}
+//     n = n + 2;
+//     result += '\n';
+// }
 
-console.log(result);
+// console.log(result);
 
 
 function getMathResult(base, repeat) {
