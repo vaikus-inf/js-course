@@ -69,3 +69,25 @@ function showProgrammingLangs(personalPlanPeter) {
     
     return str;
 }
+
+
+const students = ['Peter', 'Andrew', 'Ann', 'Mark', 'Josh', 'Sandra', 'Cris', 'Bernard', 'Takesi', 'Sam', 'Buba'];
+
+function sortStudentsByGroups(arr) {
+    let groups = [];
+    arr.sort();
+    
+    for (let i = 0; i < 3; i++) {
+        groups[i] = arr.splice(0, 3);
+    }
+    
+    if (arr.length > 0) {
+        groups[3] = `Оставшиеся студенты: ${arr.join(', ')}`;
+    } else {
+        groups[3] = 'Оставшиеся студенты: -';
+    }
+    
+    return groups;
+}
+
+console.log(sortStudentsByGroups(students));
